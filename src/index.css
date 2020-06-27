@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.calendarContainer {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: solid grey;
+  font-size: .8rem;
+}
+
+.daysOfWeekContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-emphasis: center;
+}
+.daysOfWeek {
+  text-align: center;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.startingBlank {
+  background: #ececec;
+}
+
+.endingBlank {
+  background: #ececec;
+}
+
+div.startingBlank:hover {
+  background-color: lightgrey !important;
+}
+
+div.daySquare {
+  border: solid 1px lightgray;
+  text-align: right;
+  height: 100px;
+  padding: 4px;
+  display: flex;
+  flex: 1;
+  font-size: 8px;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+div.daySquare:hover {
+  background: #eef7f0;
+}
+
+div.eventPin {
+  height: 20%;
+  background: #8ae295;
+  font-size: 12px;
+  width: 100px;
+  border-radius: 16px;
+  text-align: center;
+  overflow: hidden;
+  align-self: flex-end;
+  border: solid 1px white;
+}
+
+div.eventPin:hover {
+  height: 25%;
+  font-weight: 800;
+}
